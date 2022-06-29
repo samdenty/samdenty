@@ -17,6 +17,11 @@ const Main = styled.main`
 const LogoLink = styled.a`
   filter: grayscale(100%);
   margin-right: 15px;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 const LogoContainer = styled.div`
@@ -48,11 +53,17 @@ const Home: NextPage = () => {
           <LogoLink href="mailto:samddenty@gmail.com" target="_blank">
             <Image src="/logos/email.svg" width={50} height={50} />
           </LogoLink>
+          <LogoLink href="https://twitter.com/samddenty" target="_blank">
+            <Image src="/logos/twitter.svg" width={50} height={50} />
+          </LogoLink>
           <LogoLink href="https://github.com/samdenty" target="_blank">
             <Image src="/logos/github.svg" width={50} height={50} />
           </LogoLink>
           <LogoLink href="https://linkedin.com/in/samdenty" target="_blank">
             <Image src="/logos/linkedin.svg" width={50} height={50} />
+          </LogoLink>
+          <LogoLink href="https://instagram/samdenty" target="_blank">
+            <Image src="/logos/instagram.svg" width={50} height={50} />
           </LogoLink>
         </LogoContainer>
         <Strava />
