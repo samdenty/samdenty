@@ -60,7 +60,7 @@ const Home: NextPage = () => {
           <LogoLink href="https://linkedin.com/in/samdenty" target="_blank">
             <Image src="/logos/linkedin.svg" width={50} height={50} />
           </LogoLink>
-          <LogoLink href="https://instagram/samdenty" target="_blank">
+          <LogoLink href="https://instagram.com/sam.denty" target="_blank">
             <Image src="/logos/instagram.svg" width={50} height={50} />
           </LogoLink>
         </LogoContainer>
