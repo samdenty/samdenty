@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { Fraunces, Inter, JetBrains_Mono } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 const inter = Inter({
@@ -49,7 +50,10 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${jetbrainsMono.variable} ${fraunces.variable}`}
     >
-      <body className={`${inter.className} bg-black`}>{children}</body>
+      <body className={`${inter.className} bg-black`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
