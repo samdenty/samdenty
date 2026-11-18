@@ -236,7 +236,7 @@ export default function App() {
               </span>
               <div className="flex items-center gap-1.5 text-stone-400 text-[13px] mt-0.5">
                 <MapPin size={12} strokeWidth={2} className="text-[#d97757]" />
-                <span>Ireland</span>
+                <span>Westport, Ireland</span>
                 <span className="text-stone-700">·</span>
                 <span>{age}</span>
               </div>
