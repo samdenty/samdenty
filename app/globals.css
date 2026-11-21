@@ -14,16 +14,17 @@
 
 html,
 body {
-  font-family: var(--font-sans), 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Allo', system-ui, -apple-system, sans-serif;
+  font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'ss01', 'cv11';
   background-color: #000;
 }
 
 .font-serif-display {
-  font-family: var(--font-serif), 'Fraunces', 'Times New Roman', serif;
-  font-feature-settings: 'ss01';
+  font-family: 'Allo', system-ui, sans-serif;
+  font-optical-sizing: none;
+  font-variation-settings: 'opsz' 32, 'ROND' 50;
   letter-spacing: -0.02em;
 }
 

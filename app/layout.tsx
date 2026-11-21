@@ -1,26 +1,14 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
-import { Fraunces, Inter, JetBrains_Mono } from 'next/font/google';
+import { JetBrains_Mono } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
+import 'allo-font';
 import './globals.css';
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-sans',
-  display: 'swap',
-});
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   weight: ['400', '500'],
   variable: '--font-mono',
-  display: 'swap',
-});
-
-const fraunces = Fraunces({
-  subsets: ['latin'],
-  variable: '--font-serif',
   display: 'swap',
 });
 
@@ -46,12 +34,8 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${jetbrainsMono.variable} ${fraunces.variable}`}
-    >
-      <body className={`${inter.className} bg-black`}>
-        {children}
+    <html lang="en" className={jetbrainsMono.variable}>
+      <body className="bg-black">{children}
         <Analytics />
       </body>
     </html>

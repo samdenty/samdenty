@@ -633,12 +633,13 @@ export default function MacScreen() {
                 <h1
                   style={{
                     margin: 0,
-                    fontFamily: 'Fraunces, Georgia, serif',
+                    fontFamily: 'Allo, system-ui, sans-serif',
                     fontWeight: 300,
                     fontSize: 44,
                     letterSpacing: '-0.02em',
                     lineHeight: 1,
                     color: '#fafaf9',
+                    fontVariationSettings: '"opsz" 32, "ROND" 50',
                   }}
                 >
                   A decade of{' '}
